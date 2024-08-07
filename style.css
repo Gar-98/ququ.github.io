@@ -1,0 +1,51 @@
+canvas {
+  display: block;
+  border: 2px solid black;
+  background-image: url("background.png");
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-game {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.dialog {
+  padding: 20px;
+  width: 60%;
+  border-radius: 3px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 28px;
+  color: white;
+}
+
+.restart {
+  outline: none;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.end-game__open {
+  visibility: visible;
+}
